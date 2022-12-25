@@ -142,7 +142,7 @@ Source: https://docs.docker.com/compose/install/
 5. Create the 'dbuser' user in the MySQL database.\
 &nbsp;&nbsp;$ CREATE USER 'dbuser'@'10.0.2.4' IDENTIFIED BY 'dbpass';
 6. Give the 'dbuser' user privileges to preform all operations and flush the privileges.\
-&nbsp;&nbsp;$ GRANT ALL PRIVILEGES ON *.* TO 'dbuser'@'10.0.2.4' WITH GRANT OPTION;
+&nbsp;&nbsp;$ GRANT ALL PRIVILEGES ON \*.\* TO 'dbuser'@'10.0.2.4' WITH GRANT OPTION;
 &nbsp;&nbsp;$ FLUSH PRIVILEGES;
 
 Source: http://linuxize.com/post/how-to-create-mysql-user-accounts-and-grant-privileges/
