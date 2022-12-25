@@ -152,14 +152,14 @@ Source: http://linuxize.com/post/how-to-create-mysql-user-accounts-and-grant-pri
 2. In the dropdown menu, select utf8_general_ci.
 3. Select the database 'phplogin' from the left hand side and select the 'SQL' tab.
 4. Enter the following SQL statement:\
-&nbsp;&nbsp;CREATE TABLE IF NOT EXISTS 'accounts' (\
-&nbsp;&nbsp;&nbsp;&nbsp;`id` int(11) NOT NULL AUTO_INCREMENT,\
-&nbsp;&nbsp;&nbsp;&nbsp;`username` varchar(50) NOT NULL,\
-&nbsp;&nbsp;&nbsp;&nbsp;`password` varchar(255) NOT NULL,\
-&nbsp;&nbsp;&nbsp;&nbsp;`email` varchar(100) NOT NULL,\
+&nbsp;&nbsp;CREATE TABLE IF NOT EXISTS \`accounts\` (\
+&nbsp;&nbsp;&nbsp;&nbsp;\`id\` int(11) NOT NULL AUTO_INCREMENT,\
+&nbsp;&nbsp;&nbsp;&nbsp;\`username\` varchar(50) NOT NULL,\
+&nbsp;&nbsp;&nbsp;&nbsp;\`password\` varchar(255) NOT NULL,\
+&nbsp;&nbsp;&nbsp;&nbsp;\`email\` varchar(100) NOT NULL,\
 &nbsp;&nbsp;&nbsp;&nbsp;PRIMARY KEY (`id`)\
 &nbsp;&nbsp;) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;\
-&nbsp;&nbsp;INSERT INTO `accounts` (`id`, `username`, `password`, `email`) VALUES (1, 'test', '$2y$10$SfhYIDtn.iOuCW7zfoFLuuZHX6lja4lF4XA4JqNmpiH/.P3zB8JCa', 'test@test.com');
+&nbsp;&nbsp;INSERT INTO \`accounts\` (\\`id\`, \`username\`, \`password\`, \`email\`) VALUES (1, 'test', '$2y$10$SfhYIDtn.iOuCW7zfoFLuuZHX6lja4lF4XA4JqNmpiH/.P3zB8JCa', 'test@test.com');
 
 # Google reCAPTCHA
 1. Visit https://www.google.com/recaptcha/admin/create
